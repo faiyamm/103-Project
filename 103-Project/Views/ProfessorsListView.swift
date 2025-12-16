@@ -52,6 +52,7 @@ struct ProfessorsListView: View {
                     
                     HStack {
                         TextField("First Name", text: $addFirstName)
+                            .autocorrectionDisabled(true)
                             .textFieldStyle(.plain)
                             .padding(.horizontal, 15)
                             .frame(height: 50)
@@ -60,6 +61,7 @@ struct ProfessorsListView: View {
                             .cornerRadius(25)
                             .frame(maxWidth: .infinity)
                         TextField("Last Name", text: $addLastName)
+                            .autocorrectionDisabled(true)
                             .textFieldStyle(.plain)
                             .padding(.horizontal, 15)
                             .frame(height: 50)
@@ -70,6 +72,7 @@ struct ProfessorsListView: View {
                     } 
                     HStack {
                         TextField("Phone Number", text: $addPhoneNumber)
+                            .autocorrectionDisabled(true)
                             .textFieldStyle(.plain)
                             .padding(.horizontal, 15)
                             .frame(height: 50)
